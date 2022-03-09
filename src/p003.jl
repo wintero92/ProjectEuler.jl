@@ -83,7 +83,6 @@ realizations[3] = [
 #		else:
 #			return str(n)
 
-
 #def smallest_prime_factor(n):
 #	assert n >= 2
 #	for i in range(2, eulerlib.sqrt(n) + 1):

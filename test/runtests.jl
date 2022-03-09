@@ -9,7 +9,7 @@ end
 
 include("solutions.jl")
 
-problems_solved = 3
+problems_solved = 4
 
 @testset "ProjectEuler.jl" begin
     for p in 1:problems_solved
@@ -27,8 +27,9 @@ function _print_name(f, max_len)
 end
 
 function _print_benchmarks(functions, times)
+    max_len = maximum([length(string(fun)) for fun in functions])
     for v in sortperm(times)
-        @printf("\t%s:%16.5f\n", _print_name(functions[v], length(maximum(string.(functions)))), times[v])
+        @printf("\t%s:%16.5f\n", _print_name(functions[v], max_len), times[v])
     end
 end
 

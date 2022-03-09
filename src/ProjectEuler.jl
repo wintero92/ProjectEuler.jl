@@ -8,5 +8,6 @@ export realizations
 include("p001.jl")
 include("p002.jl")
 include("p003.jl")
+include("p004.jl")
 
 end
